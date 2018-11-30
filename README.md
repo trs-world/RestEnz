@@ -23,7 +23,7 @@ GETデータ
   
 |JSON Key|型|必須|検索条件|値の説明|
 |:---|:---|:---|:---|:---|
-|name|string|◯|完全一致|
+|name|string|◯|完全一致|name of restriction enzyme|
   
 返却データ  
   
