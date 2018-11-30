@@ -21,16 +21,18 @@ If you will use localhost, it can be executed with the following code.
 ### request method  
 GETデータ  
   
+    
 |JSON Key|型|必須|検索条件|値の説明|
 |:---|:---|:---|:---|:---|
-|name|string|◯|完全一致|name of restriction enzyme|
+|name|string|◯|完全一致|restriction enzyme name|
   
 返却データ  
   
+    
 |JSON Key|model|need|destription|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|
 |name|string|◯| restriction_enzyme name|
-|restriction_site|array|◯recognition sequence|
+|restriction_site|array|◯|recognition sequence|
 |  first|string|◯|ahead end when disconnected|
 |  last|string|◯|later end when disconnected|
 |  whole|string|◯|all of recognition sequence|
