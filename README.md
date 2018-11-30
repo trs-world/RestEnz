@@ -19,14 +19,14 @@ If you will use localhost, it can be executed with the following code.
 `php -S localhost:8080`  
 
 ### request method  
-GETデータ  
+GET data  
   
     
 |JSON Key|型|必須|検索条件|値の説明|
 |:---|:---|:---|:---|:---|
 |name|string|◯|完全一致|restriction enzyme name|
   
-返却データ  
+return data  
   
     
 |JSON Key|model|need|destription|
