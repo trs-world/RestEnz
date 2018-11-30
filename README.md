@@ -28,7 +28,7 @@ GETデータ
 返却データ  
   
 |JSON Key|model|need|destription|
-|:---|:---|:---|:---|:---| 
+|:---|:---|:---|:---|:---|
 |name|string|◯| restriction_enzyme name|
 |restriction_site|array|◯recognition sequence|
 |  first|string|◯|ahead end when disconnected|
