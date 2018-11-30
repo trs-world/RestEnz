@@ -45,7 +45,7 @@ class RestEnz:
             get_json = json.loads(html)
             return get_json
 
-    #convert ATGC => ZWVK => GCAT
+    #convert ATGC => ZWVK => TACG
     @classmethod
     def opposite(cls, restriction_dna):
         former = ['A', 'T', 'G', 'C']
