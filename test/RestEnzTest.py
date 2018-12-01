@@ -33,14 +33,11 @@ class RestEnzTest(unittest.TestCase):
     def test_reverse(self):
         self.assertEqual('TACG', str(ATGC_DNA.reverse().get_dna()))
 
-    def test_opposite_cut(self):
-        dna = re.RestEnz('mock')
-        self.assertEqual('TACG', dna.opposite(ATGC))
-
     def test_get_dna(self):
         get_dna = ATGC_DNA.get_dna()
         self.assertEqual(True, get_dna == Seq(ATGC, IUPAC.unambiguous_dna))
 
+    # set api on the server
     def test_get_restriction_enzyme(self):
         BamH_1 = re.RestEnz('').get_restriction_enzyme('BamH_1')
         self.assertEqual('BamH_1', BamH_1['name'])

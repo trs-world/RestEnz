@@ -30,7 +30,7 @@ class RestEnz:
         cut_dna[-1] = cut_dna[-1][:-len(start)]
         return cut_dna
 
-    #convert ATGC => TACG
+    # convert ATGC => TACG
     def reverse(self):
         return RestEnz(self.dna.reverse_complement()[::-1])
 
@@ -44,20 +44,6 @@ class RestEnz:
             html = requests.get(url).text
             get_json = json.loads(html)
             return get_json
-
-    #convert ATGC => ZWVK => TACG
-    @classmethod
-    def opposite(cls, restriction_dna):
-        former = ['A', 'T', 'G', 'C']
-        converter = ['Z', 'W', 'V', 'K']
-        latter = ['T', 'A', 'C', 'G']
-        former_dna = restriction_dna
-        for i in range(0, len(former)):
-            former_dna = former_dna.replace(former[i], converter[i])
-        latter_dna = former_dna
-        for i in range(0, len(latter)):
-            latter_dna = latter_dna.replace(converter[i], latter[i])
-        return latter_dna
 
 
 class NotCodonError(Exception):
