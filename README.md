@@ -16,7 +16,7 @@ Setup
   
 RestEnz load api url via config.yml.we will prepare the server by yourself.  
 If you will use localhost, it can be executed with the following code.  
-`php -S localhost:8080`  
+`$ php -S localhost:8080`  
 
 ### request method  
 GET data  
@@ -24,7 +24,7 @@ GET data
     
 |JSON Key|型|必須|検索条件|値の説明|
 |:---|:---|:---|:---|:---|
-|name|string|◯|完全一致|restriction enzyme name|
+|name|string|◯|perfect matching|restriction enzyme name|
   
 return data  
   
@@ -33,9 +33,9 @@ return data
 |:---|:---|:---|:---|
 |name|string|◯| restriction_enzyme name|
 |restriction_site|array|◯|recognition sequence|
-|  first|string|◯|ahead end when disconnected|
-|  last|string|◯|later end when disconnected|
-|  whole|string|◯|all of recognition sequence|
+|&nbsp;&nbsp;&nbsp;first|string|◯|ahead end when disconnected|
+|&nbsp;&nbsp;&nbsp;last|string|◯|later end when disconnected|
+|&nbsp;&nbsp;&nbsp;whole|string|◯|all of recognition sequence|
 |total_site|int|◯|size of restriction_site|
   
 ## 2、load DNA file via BioPython  
