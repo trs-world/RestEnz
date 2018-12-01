@@ -1,6 +1,6 @@
 RestEnz  
 ====  
-***  
+    
 The RestEnz can treat DNA with restriction enzymes.  
 Restriction Enzyme can cut DNA,which change end to blunt end or protruding end.  
 Concretely, RestEnz can get specified restriction enzyme(need set up a server) and cut DNA using it.  
@@ -11,7 +11,7 @@ Thus, it is dangerous to use as it is！
   
 Setup  
 ====  
-***  
+    
 ## 1、Write API URL to the config.yml  
   
 RestEnz load api url via config.yml.we will prepare the server by yourself.  
@@ -44,5 +44,5 @@ DNA file can get [NCBI](https://www.ncbi.nlm.nih.gov).Details will be checked by
   
 License  
 =====  
-***  
+    
 All codes of this repository except library file are available under the MIT license. See the LICENSE for more information.
